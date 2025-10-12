@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager </title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="greeting" id="greeting"></div>
+        <div class="date" id="currentDate"></div>
+    </div>
+
+    <h1>Task Manager</h1>
+
+    <form id="taskForm">
+        <input type="text" id="taskTitle" placeholder="📝 Enter task title (e.g., 'Finish report')" required />
+        <input type="date" id="taskDueDate" />
+        <button type="submit" id="addBtn">➕ Add Task</button>
+    </form>
+
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="🔍 Search tasks (title or due date)..." />
+    </div>
+
+    <div id="taskList"></div>
+
+    <div id="progress">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+        <div id="progressText">0% Complete (0/0 tasks)</div>
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
