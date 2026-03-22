@@ -34,5 +34,5 @@ https://akhileshjyani05.github.io/Task-Manager/
 - Add tasks using the input form
 - Edit tasks by clicking the edit button
 - Mark tasks complete with the complete button
-- Search tasks using the search bar
+- Search tasks using the search bar.
 - Track progress with the visual progress bar.
