@@ -25,7 +25,7 @@ function updateGreetingAndDate() {
     } else if (hour >= 12 && hour < 17) {
         greetingText = "Good Afternoon!";
         emoji = "🌤️";
-    } else if (hour >= 17 && hour < 22) {
+    } else if (hour >= 17 && hour < 21) {
         greetingText = "Good Evening!";
         emoji = "🌅";
     } else {
