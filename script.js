@@ -69,7 +69,8 @@ function renderTasks() {
         const dueDateText = task.dueDate
             ? `<div class="task-due">📅 Due: ${new Date(
                 task.dueDate
-            ).toLocaleDateString()}</div>`
+            ).toLocaleDateString()}
+            </div>`
             : "";
         taskEl.innerHTML = `
                     <div class="task-content">
@@ -119,7 +120,8 @@ taskForm.addEventListener("submit", (e) => {
     document.getElementById("taskTitle").value = "";
     document.getElementById("taskDueDate").value = "";
     renderTasks();
-});
+}
+                         );
 
 function toggleComplete(index) {
     tasks[index].completed = !tasks[index].completed;
@@ -140,8 +142,8 @@ function editTask(index) {
 function deleteTask(index) {
     if (confirm("Delete this task?")) {
         tasks.splice(index, 1);
-        renderTasks();
-    }
+        renderTasks(); }
+    
 }
 
 // Initial Setup
