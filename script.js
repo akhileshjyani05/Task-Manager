@@ -13,7 +13,8 @@ const greetingEl = document.getElementById("greeting");
 const dateEl = document.getElementById("currentDate");
 
 // Dynamic Greeting and Date
-function updateGreetingAndDate() {
+function updateGreetingAndDate() 
+{
     const now = new Date();
     const hour = now.getHours();
     let greetingText = "";
@@ -25,7 +26,7 @@ function updateGreetingAndDate() {
     } else if (hour >= 12 && hour < 17) {
         greetingText = "Good Afternoon!";
         emoji = "🌤️";
-    } else if (hour >= 17 && hour < 21) {
+    } else if (hour >= 17 && hour < 22) {
         greetingText = "Good Evening!";
         emoji = "🌅";
     } else {
