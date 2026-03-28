@@ -174,7 +174,7 @@
             margin-bottom: 15px;
             border-radius: 12px;
             transition: all 0.3s ease;
-            animation: slideIn 0.3s ease forwards;
+            animation: slideIn 0.2s ease forwards;
             opacity: 0;
             transform: translateX(-20px);
         }
